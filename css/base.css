@@ -1,0 +1,442 @@
+@charset "UTF-8";
+body,ul,li,ol,dl,dd,h1,h2,h3,h4,h5,h6,input,p{ margin:0;}
+ul,ol { padding:0;}
+img { border:none;}
+.clear{zoom:1;}
+.clear:after{display:block; content:"";clear:both; visibility:hidden; height:0;}   /*清除浮动*/
+a{text-decoration:none;}
+a:hover{text-decoration: none;}
+li{list-style:none;}
+input[type="text"]{border:1px solid #ccc}
+input[type="text"]:focus{outline:none; border:1px solid #66afe9; box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);}
+input[type="submit"],input[type="button"],button{border: none; text-align: center; outline: none;}
+html,body{min-width: 1366px; color: #666;} 
+
+/******************* 头部开始 **********************/
+.head{
+	height: 80px;
+	margin: 0 auto;
+	box-shadow: 0 2px 2px rgba(3, 0, 0, .3);
+	position: relative;
+	z-index: 5;
+}
+.container{
+	width: 1180px !important;
+}
+.head .logo{
+	height: 80px;
+	background: url(../images/logo-black.png) no-repeat 0 center;
+}
+.head .nav{
+	float: left;
+}
+.head .nav>li{
+	float: left;
+}
+.head .nav>li>a{
+	display: block;
+	height: 80px;
+	width: 100px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 18px;
+	padding: 0;
+	color: #353644;
+}
+.head .nav>li a:hover{
+	background-color: #66C5EF;
+	color: #fff;
+	height: 79px;
+}
+.head .nav a.active{
+	background-color: #009EE5;
+	color: #fff; 
+	height: 79px;
+}
+.head .nav-row .nav-btn{
+	height: 80px;
+	padding-top:25px; 
+}
+.head .nav-row .nav-btn a{
+	display: block;
+	width: 70px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	float: right;
+}
+.head .nav-row .nav-btn a+a{
+	margin-right: 5px;
+}
+.head .nav-row .nav-btn .register{
+	background: #009EE5;
+}
+.head .nav-row .nav-btn .logo{	
+	background: #74C920;
+}
+#login .modal-header{
+	border-bottom: none;
+	padding: 15px 15px 0 0;
+}
+#login .modal-body{
+	padding: 0 15px 15px;
+}
+#login .logo{
+	height: 50px;
+	background: url(../images/logo-black.png) no-repeat center center;
+}
+#login .login-form{
+	width: 345px;
+	margin: 45px auto 15px;
+}
+#login .login-form input{
+	height: 50px;
+	line-height: 50px;
+	color: #99A5C2;
+	padding-left: 35px;
+	font-size: 18px;
+}
+#login .login-form .userName input{
+	background: url(../images/login-user.png) no-repeat 8px center;
+	margin-bottom: 20px;
+}
+#login .login-form .pw input{
+	background: url(../images/login-pw.png) no-repeat 8px center;
+	margin-bottom: 40px;
+}
+#login .login-form .form-btn button{
+	height: 50px;
+	font-size: 18px;
+	background: #EE491F;
+	color: #fff;
+}
+#login .forgetPw{
+	font-size: 14px;
+	padding: 15px 0;
+	color: #999999;
+}
+#login .forgetPw .forget{
+	color: #999999;
+}
+#login .forgetPw .regis{
+	float: right;
+}
+#login .forgetPw .regis>a{
+	color: #F2701F;
+}
+/**************** 头部结束 **********************/
+
+/**************** 底部开始 **********************/
+.foot{
+	padding-top: 60px;
+	background: #2A2C32;
+}
+.foot .row-1{
+	padding-bottom: 50px;
+	 background: url(../images/footer-menu-bottom.png) no-repeat center bottom;
+}
+.foot .col-2>dl,.foot .col-3>dl,.foot .col-4>dl{
+	margin: 0 auto;
+}
+.foot .col{
+	background: url(../images/footer-menu-border.png) no-repeat center right;
+}
+.foot .col>dl{
+	width: 60px;
+	height: 155px;
+}
+.foot .col>dl>dt{
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+.foot .col>dl>dd>a{
+	line-height: 20px;
+	color: #999999;
+	font-size: 12px;
+}
+.foot .col>dl>dd>a:hover{
+	color: #fff;
+}
+.foot .col-5>dl{
+	width: 200px;
+	margin: 0 auto;
+}
+.foot .col-5>dl>dt{
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+.foot .col-5>dl>dd{
+	color: #999999;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+.foot .col-5>dl>dd:nth-of-type(1){
+	margin-top: -10px;
+}
+.foot .row-2{
+	padding: 10px 0 15px;
+}
+.foot .row-2 .col-1 span{
+	color: #fff;
+	font-size: 14px;
+}
+.foot .row-2 .col-2 a{
+	display: inline-block;
+	color: #999999;
+	margin-right: 15px;
+	font-size: 12px;
+	height: 24px;
+}
+.foot .row-3 p{
+	width: 390px;
+	line-height: 30px;
+	padding: 5px 0;
+	font-size: 12px;
+	color: #777777;
+	margin: 0 auto;
+}
+/**************** 底部 结束 **********************/
+
+/**************** 左侧边栏 开始 **********************/
+.left-sidebar{
+	position: fixed;
+	top: 50%;
+	margin-top: -106px;
+	left: 20px;
+	cursor: pointer;
+}
+.left-sidebar .sidebar-head{
+	width: 116px;
+	height: 72px;
+	border-radius: 6px;
+	background: url(../images/left-sidebar-head.png) no-repeat;
+}
+.left-sidebar .sidebar-body{
+	width: 116px;
+	height: 140px;
+	padding: 10px;
+	border-width: 1px;
+	border-style: none solid solid solid; 
+	border-color: #008EDF;
+	background-color: #fff;
+}
+.left-sidebar .sidebar-body div{
+	height: 33px;
+	border: 1px solid #848484;
+	border-radius: 33px;
+	background: #F2F2F2 url(../images/icondisable.png) no-repeat left center;
+	color: #848484;
+	font-size: 12px;
+	line-height: 33px;
+	text-align: right;
+	padding-right: 5px; 
+}
+.left-sidebar .sidebar-body div:nth-of-type(1),
+.left-sidebar .sidebar-body div:nth-of-type(2){
+	margin-bottom: 10px;
+}
+.msg-b{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -120px;
+	margin-top: -155px;
+	width: 240px;
+	height: 310px;
+	border-radius: 6px;
+	overflow: hidden;
+
+}
+.msg-b .msg-head{
+	padding-left: 10px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #00AEF3;
+}
+.msg-b .msg-head button{
+	float: right;
+	width: 35px;
+	height: 35px;
+	border: none;
+	background: none;
+	line-height: 35px;
+	text-align: center;
+	font-weight: bold;
+	outline: none;
+	background: url(../images/dw.png) no-repeat center center;
+}
+.msg-b .msg-body{
+	height: 275px;
+	background-color: #EDEDED;
+	padding: 10px;
+	
+}
+.msg-b .msg-body textarea::-webkit-input-placeholder{font-size: 12px;color: #ABABAB;}
+.msg-b .msg-body input::-webkit-input-placeholder{font-size: 12px;color: #ABABAB;}
+.msg-b .msg-body textarea{
+	width: 100%;
+	height: 80px;
+	resize: none;
+	font-size: 12px;
+	color: #ABABAB;
+}
+.msg-b .msg-body input{
+	height: 30px;
+	width: 100%;
+	margin-top: 5px;
+	padding-left: 35px;
+	font-size: 12px;
+	color: #ABABAB;
+	border: 1px solid #A9A9A9;
+}
+.msg-b .msg-body button{
+	width: 90px;
+	height: 35px;
+	margin-top: 10px;
+	border-radius: 2px;
+	background-color: #00AEF3;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	color: #fff;
+	border: none;
+	outline: none;
+}
+.msg-b .msg-body #name{background: #fff url(../images/user.png) no-repeat 9px center; }
+.msg-b .msg-body #tel{background: #fff url(../images/nodephone.png) no-repeat 9px center;}
+.msg-b .msg-body #qq{background: #fff url(../images/custom-select.png) no-repeat 9px center;}
+/******************************************** 左侧边栏 结束 ************************************/
+
+/******************************************** 右侧边栏 *****************************************/
+.right-sidebar{
+	position: fixed;
+	bottom: 30%;
+	right: 20px;
+}
+.right-sidebar ul li{position: relative;}
+.right-sidebar ul li a{
+	display: block;
+	width: 55px;
+	height: 54px;
+	border-bottom: 1px solid #fff;
+}
+.right-sidebar ul li:last-of-type a{border:none;}
+.right-sidebar ul .sidebar-qq a{background: url(../images/sidebar-qq.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-tel a{background: url(../images/sidebar-tel.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-weixin a{background: url(../images/sidebar-weixin.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-weibo a{background: url(../images/sidebar-weibo.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-feedback a{background: url(../images/sidebar-feedback.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-backup a{background: url(../images/sidebar-backup.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-qq a:hover{background: url(../images/sidebar-qq-hover.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-tel a:hover{background: url(../images/sidebar-tel-hover.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-weixin a:hover{background: url(../images/sidebar-weixin-hover.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-weibo a:hover{background: url(../images/sidebar-weibo-hover.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-feedback a:hover{background: url(../images/sidebar-feedback-hover.jpg) no-repeat center center;}
+.right-sidebar ul .sidebar-backup a:hover{background: url(../images/sidebar-backup-hover.jpg) no-repeat center center;}
+.right-sidebar ul li>div{
+	position: absolute;
+	right: 80px;
+	top: 0;
+	padding: 20px;
+	text-align: center;
+	color: #666666;
+	background-color: #fff;
+	border: 1px solid #E3E3E3;
+}
+.right-sidebar ul li .tel-summary{
+	width: 400px;
+	height: 86px;
+}
+.right-sidebar ul li>div .arrow{
+	width: 8px;
+	height: 13px;
+	position: absolute;
+	right: -8px;
+	top: 20px;
+	background: url(../images/dialog_arrow.png) no-repeat center center;
+}
+.right-sidebar ul li .tel-summary p{line-height: 25px;}
+.right-sidebar ul li .weixin-summary{
+	position: absolute;
+	right: 80px;
+	padding: 20px;
+	text-align: center;
+
+}
+.right-sidebar ul li .weixin-summary p{margin-top: 10px;}
+
+/******************************************** 右侧边栏 end *************************************/
+
+/******************************************** 欢迎对话框 ***************************************/
+.dialog{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	width: 400px;
+	height: 200px;
+	border: 1px solid #E5E5E5;
+	border-radius: 6px;
+	background-color: #fff;
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+	z-index: 6;
+}
+.dialog .dialog-head{
+	height: 45px;
+	padding-left: 20px;
+	line-height: 45px;
+	font-size: 15px;
+}
+.dialog .dialog-head button{
+	width: 45px;
+	height: 45px;
+	background: url(../images/close_1.png) no-repeat center center;
+	outline: none;
+}
+.dialog .dialog-body{
+	position: relative;
+	height: 100px;
+	background: url(../images/bizqq-new.png) no-repeat 20px center;
+}
+.dialog .dialog-body p{
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -20px;
+	width: 225px;
+	height: 50px;
+}
+.dialog .dialog-foot{margin-top: 10px;}
+.dialog .dialog-foot a{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 15px;
+	float: right;
+}
+.dialog .dialog-foot .advis{
+	background-color: #009EE5;
+	color: #fff;
+}
+.dialog .dialog-foot .next-time{
+	background-color: #E5E5E5;
+	color: #333333;
+}
+/******************************************** 欢迎对话框 end ************************************************/
